@@ -20,9 +20,10 @@
 <body>
 <h1>Fetch API</h1>
 <br />
-<button id="getPosts">Get API Data Posts</button>
-<button id="getPosts">Get Posts</button>
+<button id="getPosts">Get Posts API</button>
+
 <hr />
+
 <form id="addPost">
 	<div>
 		<input type="text" id="title" placeholder="Title">
@@ -55,7 +56,8 @@ document.getElementById('addPost').addEventListener('submit', addPost);
 document.getElementById('getData').addEventListener('submit', getData);
 
 // Variables
-var encodedInputURL = encodeURIComponent(INPUT);
+let inputURL = document.getElementById('getData').value;
+var encodedInputURL = encodeURIComponent(inputURL);
 var apiEndpoint = "https://jsonplaceholder.typicode.com/posts";
 var iframelyApiEndpointURL = "iframe.ly/api/iframely?url=" + encodedInputURL + "&api_key=57924d18254bf0be219387";
 
@@ -97,7 +99,9 @@ function addPost(e) {
 }
 
 // Function Get Data (Parse URL)
-function getData(){
+function getData(e) {
+	e.preventDefault();
+	
 	fetch(iframelyApiEndpointURL)
 	.then((res) => res.json())
 	.then((data) => {
