@@ -2,6 +2,4 @@
 
 # Kemedia
 
----
-
 Kemedia web repository.
