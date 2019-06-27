@@ -1,0 +1,21 @@
+  {
+  "name": "kemedia",
+  "version": "1.0.0",
+  "description": "This is the Kemedia development repository.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemist/kemedia.git"
+  },
+  "keywords": [
+    "kemedia",
+    "master",
+    "codesandbox"
+  ],
+  "author": "Kemedia, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kemist/kemedia/issues"
+  },
+  "homepage": "https://github.com/kemist/kemedia#readme"
+}
